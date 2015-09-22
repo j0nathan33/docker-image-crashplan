@@ -33,6 +33,8 @@ VOLUME /crashplan/archives
 VOLUME /crashplan/log
 VOLUME /crashplan/cache
 
+VOLUME /backups
+
 COPY my.service.xml /crashplan/conf.orig/my.service.xml
 COPY start-crashplan.sh /crashplan/bin/start-crashplan.sh
 COPY entrypoint.sh /entrypoint.sh
