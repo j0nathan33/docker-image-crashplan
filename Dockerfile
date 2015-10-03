@@ -13,8 +13,8 @@ RUN apt-get update && \
 RUN cd /tmp; wget -O crashplan.tgz http://download1.us.code42.com/installs/linux/install/CrashPlan/CrashPlan_4.4.1_Linux.tgz; tar -x -f crashplan.tgz
 
 # install crashplan
-COPY install-crashplan.sh /tmp/CrashPlan-install/install-crashplan.sh
-RUN cd /tmp/CrashPlan-install; ./install-crashplan.sh; cd /tmp; rm -rf CrashPlan-install
+COPY install-crashplan.sh /tmp/crashplan-install/install-crashplan.sh
+RUN cd /tmp/crashplan-install; ./install-crashplan.sh; cd /tmp; rm -rf crashplan-install
 
 # when you authenticate to crashplan it creates /var/lib/crashplan/.identity.  
 # we want this to live on a volume with our other configuration files.
