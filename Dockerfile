@@ -10,7 +10,7 @@ RUN apt-get update && \
 	apt-get clean
 
 # fetch crashplan package
-RUN cd /tmp; wget -O crashplan.tgz http://download1.us.code42.com/installs/linux/install/CrashPlan/CrashPlan_4.5.2_Linux.tgz; tar -x -f crashplan.tgz
+RUN cd /tmp; wget -O crashplan.tgz http://download1.us.code42.com/installs/linux/install/CrashPlan/CrashPlan_4.7.0_Linux.tgz; tar -x -f crashplan.tgz
 
 # install crashplan
 COPY install-crashplan.sh /tmp/crashplan-install/install-crashplan.sh
