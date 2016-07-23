@@ -24,7 +24,7 @@ RUN ln -s /crashplan/conf /var/lib/crashplan
 VOLUME /crashplan/conf
 
 # backups go here
-VOLUME /crashplan/archives
+VOLUME /mnt/archives
 
 # cache/logs/etc
 VOLUME /crashplan/log
