@@ -1,4 +1,5 @@
 FROM ubuntu:trusty
+ENV LANG en_US.UTF-8
 MAINTAINER Lars Kellogg-Stedman <lars@oddbit.com>
 
 ENV DEBIAN_FRONTEND noninteractive
